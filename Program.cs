@@ -4,7 +4,7 @@ List<string> teamC = new List<string>();
 List<string> teamD = new List<string>();
 
 List<string> potA = new List<string>{
-    "Kembo", "Jurua", "Keyz", "Karim", "Patu", "Mago"
+    "Kembo", "Keyz", "Karim", "Patu", "Mago", "Joshua", "Semambo", "Jurua"
 };
 
 List<string> potB = new List<string>{
@@ -17,7 +17,7 @@ List<string> potC = new List<string>{
 };
 
 List<string> potD = new List<string>{
-    "Prem", "Sadati", "Andrew S", "Kirum", "Jeff", "Samson", "Pius", "Lameck", "Frank", "Wilberforce", "Bright", "Ken O"
+    "Prem", "Kirum", "Pius", "Bright"
 };
 
 void PickFromPot(ref List<string> teamA, ref List<string> teamB, ref List<string> teamC, ref List<string> teamD, List<string> pot)
