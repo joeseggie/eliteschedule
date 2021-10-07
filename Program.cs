@@ -20,6 +20,11 @@ List<string> potD = new List<string>{
     "Prem", "Kirum", "Pius", "Bright"
 };
 
+potA = potA.OrderBy(_ => Guid.NewGuid()).ToList();
+potB = potB.OrderBy(_ => Guid.NewGuid()).ToList();
+potC = potC.OrderBy(_ => Guid.NewGuid()).ToList();
+potD = potD.OrderBy(_ => Guid.NewGuid()).ToList();
+
 void PickFromPot(ref List<string> teamA, ref List<string> teamB, ref List<string> teamC, ref List<string> teamD, List<string> pot)
 {
     while (pot.Count > 0)
@@ -40,6 +45,7 @@ List<string> PopulateTeams(ref List<string> teamA, ref List<string> teamB, ref L
 List<string> AddAndRemoveOperation(ref List<string> team, List<string> pot)
 {
     var randomPicker = new Random();
+    
     int index = randomPicker.Next(pot.Count);
     if (pot.Count > 0)
     {
